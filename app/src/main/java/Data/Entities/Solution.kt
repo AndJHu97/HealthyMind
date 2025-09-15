@@ -14,9 +14,9 @@ import androidx.room.Index
 )
 data class Solution(
     @PrimaryKey val id: Int,
-    val solutionType: String,    // e.g. "prompt" or "saved_text"
+    val solutionType: String,    // e.g. "question" or "saved_text"
     val promptText: String,
-    val answers: String?,        // JSON string or comma-separated answers (for prompts)
+    //val answers: String?,        // JSON string or comma-separated answers (for prompts)
     val problemId: Int,
     val previousAnswerIds: String?,  // comma-separated IDs to PreviousSolutions
     val nextSolutionId: Int?

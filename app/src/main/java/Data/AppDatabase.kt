@@ -6,6 +6,7 @@ import androidx.room.RoomDatabase
         Question::class,
         Answer::class,
         Conditional::class,
+        ConditionalRequirement::class,
         Solution::class,
         Problem::class,
         CurrentProblem::class,
@@ -22,4 +23,5 @@ abstract class AppDatabase : RoomDatabase() {
     abstract fun problemDao(): ProblemDao
     abstract fun currentProblemDao(): CurrentProblemDao
     abstract fun previousSolutionDao(): PreviousSolutionDao
+    abstract fun conditionalRequirementDao(): ConditionalRequirementDao
 }
